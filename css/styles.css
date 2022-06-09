@@ -125,13 +125,15 @@ address {
   align-items: center;
 }
 
-.link .current::after {
+.current::after {
   content: '';
   position: absolute;
   width: 100%;
   height: 4px;
   background-color: var(--acent-color);
   border-radius: 2px;
+  left: 0;
+  bottom: 0;
 }
 
 /* Contacts */
