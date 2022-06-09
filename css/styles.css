@@ -112,6 +112,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  position: relative;
 }
 
 .site-nav .link:hover,
@@ -122,6 +123,15 @@ address {
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.link .current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--acent-color);
+  border-radius: 2px;
 }
 
 /* Contacts */
@@ -380,6 +390,19 @@ address {
   display: flex;
   margin-left: -30px;
 }
+.images {
+  position: relative;
+}
+.images::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 /* Постоянные клиенты */
 .section-clients {
   padding-top: 94px;
